@@ -13,11 +13,11 @@ The project contains two modules:
 * "compose" uses Jetpack Compose, please select this module if you are comfortable writing compose code
 * "xml" uses more traditional XML layouts, please select this module if you are more comfortable using XML layouts
 
-## Part 1 (approx 20 mins)
+## Exercise
 
 The bulk of the implementation is in MainActivity.kt
 
-Spend 5 minutes discussing some improvements to the current implementation based on your experience and knowledge of Android and Software Engineering best practises with your interviewers.
+Spend some time discussing some improvements to the current implementation based on your experience and knowledge of Android and Software Engineering best practises with your interviewers.
 
 Think about:
 * Architecture
@@ -26,13 +26,4 @@ Think about:
 * Maintainability
 * Scalability
 
-Now spend 15 minutes refactoring MainActivity.kt based on these discussions
-
-## Part 2 (approx 30 mins)
-
-Please review these tickets and implement them to a high standard.
-
-[JLR-1234](tickets/JLR-1234.md)
-
-[JLR-1235](tickets/JLR-1235.md)
-
+Now start refactoring the code based on what you think is most important

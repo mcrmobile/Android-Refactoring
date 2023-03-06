@@ -14,20 +14,11 @@ import kotlinx.coroutines.launch
 class MainActivity : AppCompatActivity() {
 
     var binding: ActivityMainBinding? = null
-    val adapter = VehiclesRecyclerViewAdapter()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding!!.root)
-        binding!!.recyclerView.adapter = adapter
-        lifecycleScope.launch {
-            try {
-                adapter.vehicles = DependencyContainer.vehiclesService.getVehicles()
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
-        }
     }
 
     override fun onDestroy() {
@@ -35,36 +26,5 @@ class MainActivity : AppCompatActivity() {
         binding = null
     }
 
-    inner class VehiclesRecyclerViewAdapter :
-        RecyclerView.Adapter<VehiclesRecyclerViewAdapter.ViewHolder>() {
-
-        var vehicles: List<Vehicle> = emptyList()
-            set(value) {
-                field = value
-                notifyDataSetChanged()
-            }
-
-        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-            return ViewHolder(ItemVehicleBinding.inflate(LayoutInflater.from(parent.context))).apply {
-                itemView.setOnClickListener {
-                    Toast
-                        .makeText(
-                            this@MainActivity,
-                            vehicles[adapterPosition].model,
-                            Toast.LENGTH_SHORT
-                        )
-                        .show()
-                }
-            }
-        }
-
-        override fun getItemCount(): Int = vehicles.size
-
-        override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            holder.binding.name.text = vehicles[position].model + " " + vehicles[position].model
-        }
-
-        inner class ViewHolder(val binding: ItemVehicleBinding) : RecyclerView.ViewHolder(binding.root)
-    }
 }
 

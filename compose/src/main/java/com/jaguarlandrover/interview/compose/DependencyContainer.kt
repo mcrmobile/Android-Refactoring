@@ -4,6 +4,7 @@ import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFact
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaType
 import retrofit2.Retrofit
 
 object DependencyContainer {
@@ -14,7 +15,7 @@ object DependencyContainer {
             .baseUrl(API_URL)
             .addConverterFactory(Json {
                 ignoreUnknownKeys = true
-            }.asConverterFactory(MediaType.parse("application/json")!!))
+            }.asConverterFactory("application/json".toMediaType()))
             .build()
     }
 

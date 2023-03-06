@@ -1,5 +1,7 @@
 package com.jaguarlandrover.interview.compose
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.Serializable
 import retrofit2.http.GET
 
@@ -12,7 +14,9 @@ interface VehiclesService {
 }
 
 @Serializable
+@Parcelize
 data class Vehicle(
+    val vin: String,
     val brand: String,
     val nickname: String,
     val model: String,
@@ -20,7 +24,8 @@ data class Vehicle(
     val colour: String,
     val registration: String,
     val images: Images
-)
+) : Parcelable
 
 @Serializable
-data class Images(val primary: String)
+@Parcelize
+data class Images(val primary: String): Parcelable

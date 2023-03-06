@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id "org.jetbrains.kotlin.plugin.serialization"
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -60,6 +61,9 @@ dependencies {
     implementation 'androidx.activity:activity-compose:1.6.1'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1'
 
+    // Jetpack Navigation https://developer.android.com/jetpack/compose/navigation
+    implementation "androidx.navigation:navigation-compose:2.5.3"
+
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
 
@@ -69,4 +73,9 @@ dependencies {
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0"
+
+    // Coil image loading https://coil-kt.github.io/coil/compose/
+    implementation("io.coil-kt:coil-compose:2.2.2")
+
+
 }

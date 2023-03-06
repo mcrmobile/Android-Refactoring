@@ -11,7 +11,7 @@ import com.jaguarlandrover.interview.databinding.ActivityMainBinding
 import com.jaguarlandrover.interview.databinding.ItemVehicleBinding
 import kotlinx.coroutines.launch
 
-class XmlMainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     var binding: ActivityMainBinding? = null
     val adapter = VehiclesRecyclerViewAdapter()
@@ -49,7 +49,7 @@ class XmlMainActivity : AppCompatActivity() {
                 itemView.setOnClickListener {
                     Toast
                         .makeText(
-                            this@XmlMainActivity,
+                            this@MainActivity,
                             vehicles[adapterPosition].model,
                             Toast.LENGTH_SHORT
                         )

@@ -19,7 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 
-class ComposeMainActivity : ComponentActivity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -54,7 +54,7 @@ class ComposeMainActivity : ComponentActivity() {
                                 .clickable {
                                     Toast
                                         .makeText(
-                                            this@ComposeMainActivity,
+                                            this@MainActivity,
                                             vehicles[it].model,
                                             Toast.LENGTH_SHORT
                                         )

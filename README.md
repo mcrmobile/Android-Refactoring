@@ -11,7 +11,7 @@ The project contains two modules:
 
 ## Part 1 (approx 20 mins)
 
-The bulk of the implementation is in ComposeMainActivity.kt or XmlMainActivity.kt
+The bulk of the implementation is in MainActivity.kt
 
 Spend 5 minutes discussing some improvements to the current implementation based on your experience and knowledge of Android and Software Engineering best practises with your interviewers.
 
@@ -28,7 +28,7 @@ Now spend 15 minutes refactoring MainActivity.kt based on these discussions
 
 Please review these tickets and implement them to a high standard.
 
-[JLR-1234] 
+[JLR-1234](tickets/JLR-1234.md)
 
-[JLR-1235]
+[JLR-1235](tickets/JLR-1235.md)
 

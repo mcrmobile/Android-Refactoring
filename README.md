@@ -1,6 +1,10 @@
 # Exercise
 
-This project is a very basic Android app that displays a list of vehicles from a network request.
+This project is a very basic Android app that displays a list of vehicles from a network request. 
+
+https://6405b0e040597b65de3df162.mockapi.io/vehicles
+
+An example of the response can be found [here](response.json)
 
 The project is not well-written, please suggest improvements to the project. However, be careful what you choose to refactor as this may take a lot of your time.
 

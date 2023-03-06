@@ -1,0 +1,38 @@
+[
+  {
+    "vin": "SAL1A2A44XXXXXXXX",
+    "brand": "Land Rover",
+    "model": "Range Rover Sport P400",
+    "description": "Range Rover HSE",
+    "colour": "Varesine Blue",
+    "nickname": "",
+    "registration": "VE22XXX",
+    "images": {
+      "primary": "https://i.imgur.com/QANqXHJ.png"
+    }
+  },
+  {
+    "vin": "SAL1A2AU3XXXXXXXX",
+    "brand": "Land Rover",
+    "model": "Range Rover Sport P440e",
+    "description": "Range Rover Sport Autobiography",
+    "colour": "Lantau Bronze",
+    "nickname": "Manchester Range Rover",
+    "registration": "VK22XXX",
+    "images": {
+      "primary": "https://i.imgur.com/7vuEayY.png"
+    }
+  },
+  {
+    "vin": "SAJ1A2AU3XXXXXXXX",
+    "brand": "Jaguar",
+    "model": "Jaguar F-Pace",
+    "description": "Jaguar F-Pace D200 Black Edition",
+    "colour": "Portafino Blue",
+    "nickname": "Manchester Range Rover",
+    "registration": "VK22XXX",
+    "images": {
+      "primary": "https://i.imgur.com/7vuEayY.png"
+    }
+  }
+]
